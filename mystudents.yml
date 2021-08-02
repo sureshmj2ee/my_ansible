@@ -1,0 +1,23 @@
+---
+- mystundents:
+  - name: suresh
+    phone: 8056867879
+    address:
+     doorno: 111
+     streetno: 3
+     pincode: 666666
+
+  - name: sai
+    phone: 8888888888
+    address:      
+       doorno: 111
+       streetno: 3
+       pincode: 666666
+
+  - name: sathwik
+    phone: 9999999999
+    address: 
+      doorno: 111
+      streetno: 3
+      pincode: 666666
+    

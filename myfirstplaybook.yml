@@ -1,0 +1,15 @@
+---
+- hosts: all
+  tasks:
+  - name: I want to ping all nodes
+    ping:
+
+  - name: I want to install tree software
+    apt:
+      name: tree
+      state: present
+
+  - name: I want to install wget
+    apt:
+      name: wget
+      state: present
