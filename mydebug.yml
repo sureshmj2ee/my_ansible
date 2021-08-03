@@ -1,5 +1,5 @@
 ---
-- hosts: mywebservers
+- hosts: 172.31.20.147
   become: yes
   tasks:
   - name: I want to install linux commands
