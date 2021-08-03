@@ -12,4 +12,15 @@
   - name: debug myresultvar
     debug:
      msg: "{{myresultvar}}"
-     
+
+  - name: I want to install git
+    apt:
+     name: git
+     state: present
+    when: myresultvar.stderr==""
+  
+  - name: I want to install tree
+    apt:
+     name: tree
+     state: present
+    when: myresultvar.stderr!=""
