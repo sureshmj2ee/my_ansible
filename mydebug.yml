@@ -1,0 +1,15 @@
+---
+- hosts: mywebservers
+  become: yes
+  vars:
+   myvar1:
+   myvar2:
+  tasks:
+  - name: I want to install linux commands
+    command: hostname -f
+    register: myresultvar
+  
+  - name: debug myresultvar
+    debug:
+     msg: "{{myresultvar}}"
+     
